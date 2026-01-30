@@ -11,20 +11,20 @@ export default function Envelope({ from, onClick }: EnvelopeProps) {
       onClick={onClick}
       className="
         group relative w-full aspect-[3/2]
-        bg-gradient-to-br from-[#1F3F73] via-[#2F5FA8] to-[#4F7FC8]
+        bg-gradient-to-br from-[#5A0F1B] via-[#7A1224] to-[#9B1C31]
         rounded-sm shadow-lg hover:shadow-2xl
         transition-all duration-300 hover:scale-105
-        overflow-hidden border border-[#2F5FA8]/30
+        overflow-hidden border-2 border-red-900/30
       "
     >
-      {/* soft blue glow */}
-      <div className="absolute inset-0 opacity-25 bg-[radial-gradient(circle_at_50%_50%,rgba(47,95,168,0.35),transparent)]" />
+      {/* soft bordo glow */}
+      <div className="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_50%_50%,rgba(155,28,49,0.25),transparent)]" />
 
       {/* envelope flap */}
       <div
         className="
           absolute top-0 left-0 w-full h-1/2
-          bg-gradient-to-br from-[#2F5FA8] to-[#1F3F73]
+          bg-gradient-to-br from-[#7A1224] to-[#3A0A12]
           transform origin-top group-hover:rotate-x-12
           transition-transform duration-300
         "
@@ -34,11 +34,11 @@ export default function Envelope({ from, onClick }: EnvelopeProps) {
       {/* content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center p-6">
         <div className="bg-white/90 backdrop-blur-sm rounded-full p-3 mb-4 shadow-md">
-          <Heart className="w-6 h-6 text-[#2F5FA8] fill-[#2F5FA8]" />
+          <Heart className="w-6 h-6 text-red-900 fill-red-900" />
         </div>
 
-        <div className="bg-white/95 backdrop-blur-sm px-6 py-3 rounded-sm shadow-md border border-[#2F5FA8]/20">
-          <p className="text-[#2F5FA8] font-medium text-lg font-handwritten">
+        <div className="bg-white/95 backdrop-blur-sm px-6 py-3 rounded-sm shadow-md border border-red-900/20">
+          <p className="text-red-900 font-medium text-lg font-handwritten">
             Od: {from}
           </p>
         </div>
