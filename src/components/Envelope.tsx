@@ -22,7 +22,7 @@ export default function Envelope({ from, onClick }: EnvelopeProps) {
         </div>
 
         <div className="bg-white/95 backdrop-blur-sm px-6 py-3 rounded-lg shadow-md">
-          <p className="text-red-800 font-medium text-lg">Od: {from}</p>
+          <p className="text-red-800 font-medium text-lg font-handwritten">Od: {from}</p>
         </div>
       </div>
 

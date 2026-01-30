@@ -13,8 +13,8 @@ export default function VideoModal({ message, onClose, onNext, hasNext }: VideoM
     <div className="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-fadeIn">
       <div className="bg-white rounded-2xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-auto animate-slideUp">
         <div className="sticky top-0 bg-white border-b border-pink-100 px-6 py-4 flex justify-between items-center rounded-t-2xl">
-          <h3 className="text-xl font-medium text-gray-800">
-            Życzenia od: <span className="text-red-600">{message.from}</span>
+          <h3 className="text-2xl text-gray-800" style={{ fontFamily: "'Playfair Display', serif" }}>
+            Życzenia od: <span className="text-red-600 font-handwritten">{message.from}</span>
           </h3>
           <button
             onClick={onClose}
@@ -35,13 +35,14 @@ export default function VideoModal({ message, onClose, onNext, hasNext }: VideoM
           </div>
 
           <div className="text-center mb-6">
-            <p className="text-2xl text-gray-700">❤️ Życzenia od: <strong>{message.from}</strong></p>
+            <p className="text-xl text-gray-700 font-light">❤️ Życzenia od: <span className="font-handwritten text-red-600 text-2xl">{message.from}</span></p>
           </div>
 
-          <div className="flex gap-4 justify-center">
+          <div className="flex gap-4 justify-center flex-wrap">
             <button
               onClick={onClose}
               className="px-8 py-3 bg-pink-100 hover:bg-pink-200 text-pink-800 rounded-full font-medium transition-colors"
+              style={{ fontFamily: "'Quicksand', sans-serif" }}
             >
               Wróć do kopert
             </button>
@@ -49,7 +50,8 @@ export default function VideoModal({ message, onClose, onNext, hasNext }: VideoM
             {hasNext && (
               <button
                 onClick={onNext}
-                className="px-8 py-3 bg-red-600 hover:bg-red-700 text-white rounded-full font-medium transition-colors flex items-center gap-2"
+                className="px-8 py-3 bg-gradient-to-r from-red-600 to-pink-600 hover:from-red-700 hover:to-pink-700 text-white rounded-full font-medium transition-colors flex items-center gap-2"
+                style={{ fontFamily: "'Quicksand', sans-serif" }}
               >
                 Następne życzenia
                 <ArrowRight className="w-5 h-5" />

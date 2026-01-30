@@ -55,13 +55,13 @@ function App() {
     <div className="min-h-screen bg-gradient-to-br from-pink-50 via-pink-100 to-rose-50">
       <div className="max-w-7xl mx-auto px-4 py-12">
         <section className="text-center mb-16 animate-fadeIn">
-          <h1 className="text-5xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-red-500 mb-6">
+          <h1 className="text-6xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-red-500 mb-6" style={{ fontFamily: "'Playfair Display', serif" }}>
             Wszystkiego najlepszego 🎉
           </h1>
-          <p className="text-xl md:text-2xl text-gray-700 mb-4 font-light">
+          <p className="text-lg md:text-xl text-gray-700 mb-4 font-light tracking-wide">
             Tutaj czekają koperty z urodzinowymi życzeniami dla Ciebie
           </p>
-          <p className="text-lg md:text-xl text-gray-600 font-light">
+          <p className="text-base md:text-lg text-gray-600 font-light">
             Klikaj koperty, oglądaj filmiki i wracaj kiedy chcesz!
           </p>
         </section>
@@ -79,13 +79,13 @@ function App() {
         </section>
 
         <section className="text-center py-12 px-6 bg-white/50 backdrop-blur-sm rounded-3xl shadow-lg animate-fadeIn">
-          <p className="text-2xl md:text-3xl text-gray-700 font-light leading-relaxed mb-4">
+          <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-4 font-light">
             To wszystko było zrobione specjalnie dla Ciebie.
           </p>
-          <p className="text-xl md:text-2xl text-gray-700 font-light mb-2">
+          <p className="text-lg md:text-xl text-gray-700 mb-3 font-light">
             Bo jesteś ważna 💛
           </p>
-          <p className="text-2xl md:text-3xl font-medium text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-red-500">
+          <p className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-red-500 font-handwritten">
             Kochamy Cię!
           </p>
         </section>
