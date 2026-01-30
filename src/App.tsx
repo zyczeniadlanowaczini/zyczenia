@@ -61,21 +61,19 @@ function App() {
               <path d="M 20 30 Q 30 45, 40 30 Q 50 15, 60 30 Q 70 45, 80 30 Q 90 15, 100 30" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </div>
-          <h1 className="text-6xl md:text-7xl font-bold text-red-900 mb-2" style={{ fontFamily: "'Playfair Display', serif" }}>
+          <h1 className="text-6xl md:text-7xl font-bold text-[#2F5FA8] mb-2" style={{ fontFamily: "'Playfair Display', serif" }}>
             Wszystkiego
           </h1>
-          <h1 className="text-6xl md:text-7xl font-bold text-red-900 mb-6" style={{ fontFamily: "'Playfair Display', serif" }}>
+          <h1 className="text-6xl md:text-7xl font-bold text-[#2F5FA8] mb-6" style={{ fontFamily: "'Playfair Display', serif" }}>
             najlepszego!
           </h1>
-          <p className="text-lg md:text-xl text-red-900/70 mb-4 font-light tracking-wide">
+          <p className="text-lg md:text-xl text-[#2F5FA8] mb-4 font-light tracking-wide">
             Tutaj czekają koperty z urodzinowymi życzeniami dla Ciebie
           </p>
-          <p className="text-base md:text-lg text-red-900/60 font-light">
+          <p className="text-base md:text-lg text-[#2F5FA8] font-light">
             Klikaj na koperty, oglądaj filmiki i wracaj kiedy chcesz!
           </p>
-          <p className="font-handwritten text-[#2F5FA8] text-xl md:text-2xl mb-4 opacity-90">
-  it's your birthday
-</p>
+          
 
         </section>
 
