@@ -6,32 +6,32 @@ import { VideoMessage } from './types';
 const videoMessages: VideoMessage[] = [
   {
     id: 1,
-    from: 'Ania',
+    from: 'Agatka',
     videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
   },
   {
     id: 2,
-    from: 'Kasia',
+    from: 'Mikołaj',
     videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
   },
   {
     id: 3,
-    from: 'Tomek',
+    from: 'Ida',
     videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
   },
   {
     id: 4,
-    from: 'Magda',
+    from: 'Patryk',
     videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
   },
   {
     id: 5,
-    from: 'Piotr',
+    from: 'Ola & Maciek',
     videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
   },
   {
     id: 6,
-    from: 'Julia',
+    from: 'Kacper',
     videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
   },
 ];
