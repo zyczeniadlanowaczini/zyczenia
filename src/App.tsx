@@ -73,6 +73,10 @@ function App() {
           <p className="text-base md:text-lg text-red-900/60 font-light">
             Klikaj na koperty, oglądaj filmiki i wracaj kiedy chcesz!
           </p>
+          <p className="font-handwritten text-[#2F5FA8] text-xl md:text-2xl mb-4 opacity-90">
+  it's your birthday
+</p>
+
         </section>
 
         <section className="mb-16">
