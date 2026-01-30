@@ -65,13 +65,13 @@ function App() {
             Wszystkiego
           </h1>
           <h1 className="text-6xl md:text-7xl font-bold text-red-900 mb-6" style={{ fontFamily: "'Playfair Display', serif" }}>
-            najlepszego
+            najlepszego!
           </h1>
           <p className="text-lg md:text-xl text-red-900/70 mb-4 font-light tracking-wide">
             Tutaj czekają koperty z urodzinowymi życzeniami dla Ciebie
           </p>
           <p className="text-base md:text-lg text-red-900/60 font-light">
-            Klikaj koperty, oglądaj filmiki i wracaj kiedy chcesz!
+            Klikaj na koperty, oglądaj filmiki i wracaj kiedy chcesz!
           </p>
         </section>
 
@@ -90,10 +90,10 @@ function App() {
         <section className="text-center py-12 px-6 rounded-none animate-fadeIn relative">
           <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-transparent via-red-900 to-transparent opacity-50"></div>
           <p className="text-lg md:text-xl text-red-900/70 leading-relaxed mb-4 font-light">
-            To wszystko było zrobione specjalnie dla Ciebie.
+            To wszystko było zrobione specjalnie dla Ciebie!
           </p>
           <p className="text-lg md:text-xl text-red-900/70 mb-3 font-light">
-            Bo jesteś ważna 💛
+            Bo jesteś dla Nas bardzo ważna 💛
           </p>
           <p className="text-5xl md:text-6xl font-bold text-red-900 font-handwritten">
             Kochamy Cię!
