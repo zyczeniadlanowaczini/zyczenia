@@ -7,7 +7,7 @@ const videoMessages: VideoMessage[] = [
   {
     id: 1,
     from: 'Agatka',
-    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    videoUrl: 'https://www.youtube.com/watch?v=oye0VWULmpA',
   },
   {
     id: 2,
