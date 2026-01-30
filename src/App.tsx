@@ -91,13 +91,13 @@ function App() {
 
         <section className="text-center py-12 px-6 rounded-none animate-fadeIn relative">
           <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-transparent via-red-900 to-transparent opacity-50"></div>
-          <p className="text-lg md:text-xl text-red-900/70 leading-relaxed mb-4 font-light">
+          <p className="text-lg md:text-xl text-[#2F5FA8] leading-relaxed mb-4 font-light">
             To wszystko było zrobione specjalnie dla Ciebie!
           </p>
-          <p className="text-lg md:text-xl text-red-900/70 mb-3 font-light">
+          <p className="text-lg md:text-xl text-[#2F5FA8] mb-3 font-light">
             Bo jesteś dla Nas bardzo ważna 💛
           </p>
-          <p className="text-5xl md:text-6xl font-bold text-red-900 font-handwritten">
+          <p className="text-5xl md:text-6xl font-bold text-[#2F5FA8] font-handwritten">
             Kochamy Cię!
           </p>
           <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-transparent via-red-900 to-transparent opacity-50"></div>
