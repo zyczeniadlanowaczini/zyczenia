@@ -52,11 +52,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   /* neutralny beż → róż (bez żółci) */
-  background: linear-gradient(
-    135deg,
-    #F3F1F2 0%,   /* neutralny off-white */
-    #F2DCE6 50%,  /* pudrowy róż */
-    #EFCAD8 100%  /* różowy akcent */
+  background: background-color: #FBF7F2;
+
   );
 
   min-height: 100vh;
