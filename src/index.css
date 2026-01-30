@@ -51,12 +51,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  /* beż → róż (zero żółci) */
+  /* neutralny beż → róż (bez żółci) */
   background: linear-gradient(
     135deg,
-    #F6EFEA 0%,
-    #F4D7E3 50%,
-    #F1C0D1 100%
+    #F3F1F2 0%,   /* neutralny off-white */
+    #F2DCE6 50%,  /* pudrowy róż */
+    #EFCAD8 100%  /* różowy akcent */
   );
 
   min-height: 100vh;
