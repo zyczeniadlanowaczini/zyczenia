@@ -52,7 +52,7 @@ function App() {
     : false;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#F3F1F2] via-[#F2DCE6] to-[#EFCAD8]">
+    <div className="min-h-screen bg-gradient-to-br from-[#F3F1F2] via-[#F3F1F2] to-[#F3F1F2]">
       <div className="max-w-7xl mx-auto px-4 py-12">
         <section className="text-center mb-16 animate-fadeIn">
           <div className="mb-8">
