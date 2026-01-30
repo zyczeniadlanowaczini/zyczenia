@@ -52,7 +52,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   /* neutralny beż → róż (bez żółci) */
-  background: background-color: #FBF7F2;
+ background: linear-gradient(
+  135deg,
+  #F3F1F2 0%,
+  #F2DCE6 20%,
+  #EFCAD8 40%
+);
+
 
   );
 
