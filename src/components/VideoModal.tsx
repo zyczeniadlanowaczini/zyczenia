@@ -10,17 +10,18 @@ interface VideoModalProps {
 
 export default function VideoModal({ message, onClose, onNext, hasNext }: VideoModalProps) {
   return (
-    <div className="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-fadeIn">
-      <div className="bg-white rounded-2xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-auto animate-slideUp">
-        <div className="sticky top-0 bg-white border-b border-pink-100 px-6 py-4 flex justify-between items-center rounded-t-2xl">
-          <h3 className="text-2xl text-gray-800" style={{ fontFamily: "'Playfair Display', serif" }}>
-            Życzenia od: <span className="text-red-600 font-handwritten">{message.from}</span>
-          </h3>
+    <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-fadeIn">
+      <div className="bg-gradient-to-br from-stone-50 to-amber-50 rounded-sm shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-auto animate-slideUp border border-red-900/20">
+        <div className="sticky top-0 bg-gradient-to-r from-stone-50 to-amber-50 border-b-2 border-red-900/30 px-6 py-6 flex justify-between items-center rounded-t-sm">
+          <div>
+            <p className="text-red-900/60 text-sm tracking-wide font-light">ŻYCZENIA OD</p>
+            <h3 className="text-3xl text-red-900 font-handwritten">{message.from}</h3>
+          </div>
           <button
             onClick={onClose}
-            className="p-2 hover:bg-pink-100 rounded-full transition-colors"
+            className="p-2 hover:bg-red-900/5 rounded-full transition-colors"
           >
-            <X className="w-6 h-6 text-gray-600" />
+            <X className="w-6 h-6 text-red-900/70" />
           </button>
         </div>
 
@@ -34,14 +35,15 @@ export default function VideoModal({ message, onClose, onNext, hasNext }: VideoM
             />
           </div>
 
-          <div className="text-center mb-6">
-            <p className="text-xl text-gray-700 font-light">❤️ Życzenia od: <span className="font-handwritten text-red-600 text-2xl">{message.from}</span></p>
+          <div className="text-center mb-8 py-4">
+            <p className="text-red-900/60 text-sm tracking-widest font-light mb-2">❤️ ŻYCZENIA OD</p>
+            <p className="font-handwritten text-4xl text-red-900">{message.from}</p>
           </div>
 
-          <div className="flex gap-4 justify-center flex-wrap">
+          <div className="flex gap-4 justify-center flex-wrap pb-4">
             <button
               onClick={onClose}
-              className="px-8 py-3 bg-pink-100 hover:bg-pink-200 text-pink-800 rounded-full font-medium transition-colors"
+              className="px-8 py-3 bg-stone-200/50 hover:bg-stone-300/50 text-red-900 rounded-sm font-medium transition-colors border border-red-900/20"
               style={{ fontFamily: "'Quicksand', sans-serif" }}
             >
               Wróć do kopert
@@ -50,7 +52,7 @@ export default function VideoModal({ message, onClose, onNext, hasNext }: VideoM
             {hasNext && (
               <button
                 onClick={onNext}
-                className="px-8 py-3 bg-gradient-to-r from-red-600 to-pink-600 hover:from-red-700 hover:to-pink-700 text-white rounded-full font-medium transition-colors flex items-center gap-2"
+                className="px-8 py-3 bg-gradient-to-r from-red-900 to-red-800 hover:from-red-950 hover:to-red-900 text-stone-50 rounded-sm font-medium transition-colors flex items-center gap-2"
                 style={{ fontFamily: "'Quicksand', sans-serif" }}
               >
                 Następne życzenia
