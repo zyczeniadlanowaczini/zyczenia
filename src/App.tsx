@@ -6,7 +6,7 @@ import { VideoMessage } from './types';
 const videoMessages: VideoMessage[] = [
   {
     id: 1,
-    from: 'Agatka',
+    from: 'Kacper',
     videoUrl: 'https://www.youtube.com/watch?v=oye0VWULmpA',
   },
   {
@@ -16,7 +16,7 @@ const videoMessages: VideoMessage[] = [
   },
   {
     id: 3,
-    from: 'Ida',
+    from: 'Olimpia',
     videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
   },
   {
