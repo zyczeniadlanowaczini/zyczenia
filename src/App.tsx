@@ -95,7 +95,7 @@ function App() {
             To wszystko było zrobione specjalnie dla Ciebie!
           </p>
           <p className="text-lg md:text-xl text-[#2F5FA8] mb-3 font-light">
-            Bo jesteś dla Nas bardzo ważna 💛
+            Bo jesteś dla Nas bardzo ważna...
           </p>
           <p className="text-5xl md:text-6xl font-bold text-[#2F5FA8] font-handwritten">
             Kochamy Cię!
