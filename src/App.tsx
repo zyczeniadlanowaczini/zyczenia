@@ -61,10 +61,10 @@ function App() {
               <path d="M 20 30 Q 30 45, 40 30 Q 50 15, 60 30 Q 70 45, 80 30 Q 90 15, 100 30" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </div>
-          <h1 className="text-6xl md:text-7xl font-bold text-[#2F5FA8] mb-2" style={{ fontFamily: "'Playfair Display', serif" }}>
+          <h1 className="text-7xl md:text-8xl font-bold text-[#2F5FA8] mb-2" style={{ fontFamily: "'Caveat', cursive" }}>
             Wszystkiego
           </h1>
-          <h1 className="text-6xl md:text-7xl font-bold text-[#2F5FA8] mb-6" style={{ fontFamily: "'Playfair Display', serif" }}>
+          <h1 className="text-7xl md:text-8xl font-bold text-[#2F5FA8] mb-6" style={{ fontFamily: "'Caveat', cursive" }}>
             najlepszego!
           </h1>
           <p className="text-lg md:text-xl text-[#2F5FA8] mb-4 font-light tracking-wide">
