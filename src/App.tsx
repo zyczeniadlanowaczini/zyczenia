@@ -1,4 +1,4 @@
-/import { useState } from 'react';
+import { useState } from 'react';
 import Envelope from './components/Envelope';
 import VideoModal from './components/VideoModal';
 import { VideoMessage } from './types';
