@@ -38,7 +38,7 @@ export default function Envelope({ from, onClick }: EnvelopeProps) {
         </div>
 
         <div className="bg-white/95 backdrop-blur-sm px-6 py-3 rounded-sm shadow-md border border-red-900/20">
-          <p className="text-red-900 font-medium text-lg font-handwritten">
+          <p className="text-red-900 font-medium text-2xl">
             Od: {from}
           </p>
         </div>
@@ -46,7 +46,7 @@ export default function Envelope({ from, onClick }: EnvelopeProps) {
 
       {/* hover hint */}
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-        <p className="text-white/80 text-sm font-light">
+        <p className="text-white/80 text-base font-light">
           Kliknij aby otworzyć
         </p>
       </div>

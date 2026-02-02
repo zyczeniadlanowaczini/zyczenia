@@ -14,8 +14,8 @@ export default function VideoModal({ message, onClose, onNext, hasNext }: VideoM
       <div className="bg-gradient-to-br from-stone-50 to-amber-50 rounded-sm shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-auto animate-slideUp border border-red-900/20">
         <div className="sticky top-0 bg-gradient-to-r from-stone-50 to-amber-50 border-b-2 border-red-900/30 px-6 py-6 flex justify-between items-center rounded-t-sm">
           <div>
-            <p className="text-red-900/60 text-sm tracking-wide font-light">ŻYCZENIA OD</p>
-            <h3 className="text-3xl text-red-900 font-handwritten">{message.from}</h3>
+            <p className="text-red-900/60 text-xs tracking-wide font-light">ŻYCZENIA OD</p>
+            <h3 className="text-4xl text-red-900">{message.from}</h3>
           </div>
           <button
             onClick={onClose}
@@ -36,15 +36,14 @@ export default function VideoModal({ message, onClose, onNext, hasNext }: VideoM
           </div>
 
           <div className="text-center mb-8 py-4">
-            <p className="text-red-900/60 text-sm tracking-widest font-light mb-2">❤️ ŻYCZENIA OD</p>
-            <p className="font-handwritten text-4xl text-red-900">{message.from}</p>
+            <p className="text-red-900/60 text-xs tracking-widest font-light mb-2">❤️ ŻYCZENIA OD</p>
+            <p className="text-5xl text-red-900">{message.from}</p>
           </div>
 
           <div className="flex gap-4 justify-center flex-wrap pb-4">
             <button
               onClick={onClose}
-              className="px-8 py-3 bg-stone-200/50 hover:bg-stone-300/50 text-red-900 rounded-sm font-medium transition-colors border border-red-900/20"
-              style={{ fontFamily: "'Quicksand', sans-serif" }}
+              className="px-8 py-3 bg-stone-200/50 hover:bg-stone-300/50 text-red-900 rounded-sm font-medium transition-colors border border-red-900/20 text-lg"
             >
               Wróć do kopert
             </button>
@@ -52,8 +51,7 @@ export default function VideoModal({ message, onClose, onNext, hasNext }: VideoM
             {hasNext && (
               <button
                 onClick={onNext}
-                className="px-8 py-3 bg-gradient-to-r from-red-900 to-red-800 hover:from-red-950 hover:to-red-900 text-stone-50 rounded-sm font-medium transition-colors flex items-center gap-2"
-                style={{ fontFamily: "'Quicksand', sans-serif" }}
+                className="px-8 py-3 bg-gradient-to-r from-red-900 to-red-800 hover:from-red-950 hover:to-red-900 text-stone-50 rounded-sm font-medium transition-colors flex items-center gap-2 text-lg"
               >
                 Następne życzenia
                 <ArrowRight className="w-5 h-5" />
