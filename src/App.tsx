@@ -67,6 +67,13 @@ function App() {
           <h1 className="text-7xl md:text-8xl font-bold text-[#2F5FA8] mb-6">
             najlepszego!
           </h1>
+
+          <img
+  src="/tort.png"
+  alt="Urodzinowy tort"
+  className="mx-auto mt-4 mb-6 w-40 md:w-48 opacity-95"
+ />
+
           <p className="text-xl md:text-2xl text-[#2F5FA8] mb-4 font-light tracking-wide">
             Tutaj czekają koperty z urodzinowymi życzeniami dla Ciebie
           </p>
