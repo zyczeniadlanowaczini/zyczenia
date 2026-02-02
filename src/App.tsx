@@ -1,4 +1,4 @@
-import { useState } from 'react';
+/import { useState } from 'react';
 import Envelope from './components/Envelope';
 import VideoModal from './components/VideoModal';
 import { VideoMessage } from './types';
@@ -7,7 +7,7 @@ const videoMessages: VideoMessage[] = [
   {
     id: 1,
     from: 'Kacper',
-    videoUrl: 'https://www.youtube.com/watch?v=oye0VWULmpA',
+    videoUrl: 'https://www.youtube.com/embed/watch?v=oye0VWULmpA',
   },
   {
     id: 2,
