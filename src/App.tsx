@@ -7,7 +7,7 @@ const videoMessages: VideoMessage[] = [
   {
     id: 1,
     from: 'Kacper',
-    videoUrl: 'https://www.youtube.com/embed/watch?v=oye0VWULmpA',
+    videoUrl: 'https://www.youtube-nocookie.com/embed/watch?v=oye0VWULmpA',
   },
   {
     id: 2,
