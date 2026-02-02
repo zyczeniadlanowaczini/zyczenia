@@ -17,7 +17,7 @@ const videoMessages: VideoMessage[] = [
   {
     id: 3,
     from: 'Olimpia',
-    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    videoUrl: 'https://vimeo.com/1160998960?share=copy&fl=sv&fe=ci',
   },
   {
     id: 4,
