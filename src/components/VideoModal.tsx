@@ -8,7 +8,19 @@ interface VideoModalProps {
   hasNext: boolean;
 }
 
+function getEmbedUrl(url: string): string {
+  if (url.includes('drive.google.com')) {
+    const fileIdMatch = url.match(/\/d\/([a-zA-Z0-9-_]+)/);
+    if (fileIdMatch) {
+      return `https://drive.google.com/file/d/${fileIdMatch[1]}/preview`;
+    }
+  }
+  return url;
+}
+
 export default function VideoModal({ message, onClose, onNext, hasNext }: VideoModalProps) {
+  const embedUrl = getEmbedUrl(message.videoUrl);
+
   return (
     <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-fadeIn">
       <div className="bg-gradient-to-br from-stone-50 to-amber-50 rounded-sm shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-auto animate-slideUp border border-red-900/20">
@@ -28,7 +40,7 @@ export default function VideoModal({ message, onClose, onNext, hasNext }: VideoM
         <div className="p-6">
           <div className="relative aspect-video bg-gray-900 rounded-lg overflow-hidden shadow-lg mb-6">
             <iframe
-              src={message.videoUrl}
+              src={embedUrl}
               className="absolute inset-0 w-full h-full"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
