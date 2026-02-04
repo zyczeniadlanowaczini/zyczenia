@@ -1,4 +1,4 @@
-import { X, ArrowRight } from 'lucide-react';
+import { X, ArrowRight, ExternalLink } from 'lucide-react';
 import { VideoMessage } from '../types';
 
 interface VideoModalProps {
@@ -8,8 +8,12 @@ interface VideoModalProps {
   hasNext: boolean;
 }
 
+function isGoogleDriveUrl(url: string): boolean {
+  return url.includes('drive.google.com');
+}
+
 function getEmbedUrl(url: string): string {
-  if (url.includes('drive.google.com')) {
+  if (isGoogleDriveUrl(url)) {
     const fileIdMatch = url.match(/\/d\/([a-zA-Z0-9-_]+)/);
     if (fileIdMatch) {
       return `https://drive.google.com/file/d/${fileIdMatch[1]}/preview`;
@@ -20,6 +24,7 @@ function getEmbedUrl(url: string): string {
 
 export default function VideoModal({ message, onClose, onNext, hasNext }: VideoModalProps) {
   const embedUrl = getEmbedUrl(message.videoUrl);
+  const isGoogleDrive = isGoogleDriveUrl(message.videoUrl);
 
   return (
     <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-fadeIn">
@@ -38,14 +43,26 @@ export default function VideoModal({ message, onClose, onNext, hasNext }: VideoM
         </div>
 
         <div className="p-6">
-          <div className="relative aspect-video bg-gray-900 rounded-lg overflow-hidden shadow-lg mb-6">
-            <iframe
-              src={embedUrl}
-              className="absolute inset-0 w-full h-full"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-          </div>
+          {isGoogleDrive ? (
+            <div className="relative aspect-video bg-gradient-to-br from-gray-900 to-gray-800 rounded-lg overflow-hidden shadow-lg mb-6 flex items-center justify-center">
+              <button
+                onClick={() => window.open(embedUrl, '_blank')}
+                className="flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-red-900 to-red-800 hover:from-red-950 hover:to-red-900 text-stone-50 rounded-lg font-medium transition-colors shadow-lg"
+              >
+                <span className="text-lg">Otwórz filmik</span>
+                <ExternalLink className="w-5 h-5" />
+              </button>
+            </div>
+          ) : (
+            <div className="relative aspect-video bg-gray-900 rounded-lg overflow-hidden shadow-lg mb-6">
+              <iframe
+                src={embedUrl}
+                className="absolute inset-0 w-full h-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          )}
 
           <div className="text-center mb-8 py-4">
             <p className="text-red-900/60 text-xs tracking-widest font-light mb-2">❤️ ŻYCZENIA OD</p>
