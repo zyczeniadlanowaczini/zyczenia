@@ -22,9 +22,14 @@ function getEmbedUrl(url: string): string {
   return url;
 }
 
+function shouldEmbedInIframe(url: string): boolean {
+  return url.includes('/preview');
+}
+
 export default function VideoModal({ message, onClose, onNext, hasNext }: VideoModalProps) {
   const embedUrl = getEmbedUrl(message.videoUrl);
   const isGoogleDrive = isGoogleDriveUrl(message.videoUrl);
+  const embedInIframe = shouldEmbedInIframe(message.videoUrl);
 
   return (
     <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-fadeIn">
@@ -43,7 +48,16 @@ export default function VideoModal({ message, onClose, onNext, hasNext }: VideoM
         </div>
 
         <div className="p-6">
-          {isGoogleDrive ? (
+          {embedInIframe ? (
+            <div className="relative aspect-video bg-gray-900 rounded-lg overflow-hidden shadow-lg mb-6">
+              <iframe
+                src={embedUrl}
+                className="absolute inset-0 w-full h-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          ) : isGoogleDrive ? (
             <div className="relative aspect-video bg-gradient-to-br from-gray-900 to-gray-800 rounded-lg overflow-hidden shadow-lg mb-6 flex items-center justify-center">
               <button
                 onClick={() => window.open(embedUrl, '_blank', 'width=1024,height=768,left=100,top=100')}

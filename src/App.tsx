@@ -12,7 +12,7 @@ const videoMessages: VideoMessage[] = [
   {
     id: 2,
     from: 'Mikołaj',
-    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    videoUrl: 'https://drive.google.com/file/d/1AI-cWO9UHKEnwxcYDXohlSAPjSGMCKH4/preview',
   },
   {
     id: 3,
