@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import Envelope from './components/Envelope';
+import AccessGate from './components/AccessGate';
 import VideoModal from './components/VideoModal';
 import { VideoMessage } from './types';
-import AccessGate from './components/AccessGate';
-import Envelope from './components/Envelope';
+
 
 const videoMessages: VideoMessage[] = [
   {
