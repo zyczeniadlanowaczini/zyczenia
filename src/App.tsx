@@ -51,6 +51,14 @@ function App() {
     ? videoMessages.findIndex(m => m.id === selectedMessage.id) < videoMessages.length - 1
     : false;
 
+  const handleEnvelopeClick = (message: VideoMessage) => {
+    if (message.videoUrl.includes('/preview')) {
+      window.open(message.videoUrl, '_blank');
+    } else {
+      setSelectedMessage(message);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#FBF7F2] via-[#FBF7F2] to-[#FBF7F2]">
       <div className="max-w-7xl mx-auto px-4 py-12">
@@ -80,7 +88,7 @@ function App() {
           <p className="text-lg md:text-xl text-[#2F5FA8] font-light">
             Klikaj na koperty, oglądaj filmiki i wracaj kiedy chcesz!
           </p>
-          
+
 
         </section>
 
@@ -90,7 +98,7 @@ function App() {
               <Envelope
                 key={message.id}
                 from={message.from}
-                onClick={() => setSelectedMessage(message)}
+                onClick={() => handleEnvelopeClick(message)}
               />
             ))}
           </div>
