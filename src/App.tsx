@@ -51,13 +51,16 @@ function App() {
     ? videoMessages.findIndex(m => m.id === selectedMessage.id) < videoMessages.length - 1
     : false;
 
-  const handleEnvelopeClick = (message: VideoMessage) => {
-    if (message.videoUrl.includes('/preview')) {
-      window.open(message.videoUrl, '_blank');
-    } else {
-      setSelectedMessage(message);
-    }
-  };
+ const handleEnvelopeClick = (message: VideoMessage) => {
+  const features = 'noopener,noreferrer,width=1024,height=768,left=100,top=100';
+
+  if (message.videoUrl.includes('/preview')) {
+    window.open(message.videoUrl, '_blank', features);
+  } else {
+    window.open(message.videoUrl, '_blank', features);
+  }
+};
+
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#FBF7F2] via-[#FBF7F2] to-[#FBF7F2]">
