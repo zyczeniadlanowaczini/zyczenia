@@ -46,7 +46,7 @@ export default function VideoModal({ message, onClose, onNext, hasNext }: VideoM
           {isGoogleDrive ? (
             <div className="relative aspect-video bg-gradient-to-br from-gray-900 to-gray-800 rounded-lg overflow-hidden shadow-lg mb-6 flex items-center justify-center">
               <button
-                onClick={() => window.open(embedUrl, '_blank')}
+                onClick={() => window.open(embedUrl, '_blank', 'width=1024,height=768,left=100,top=100')}
                 className="flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-red-900 to-red-800 hover:from-red-950 hover:to-red-900 text-stone-50 rounded-lg font-medium transition-colors shadow-lg"
               >
                 <span className="text-lg">Otwórz filmik</span>
