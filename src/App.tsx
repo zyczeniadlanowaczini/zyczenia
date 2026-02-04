@@ -7,7 +7,7 @@ const videoMessages: VideoMessage[] = [
   {
     id: 1,
     from: 'Kacper',
-    videoUrl: 'https://drive.google.com/file/d/1AI-cWO9UHKEnwxcYDXohlSAPjSGMCKH4/view?usp=sharing',
+    videoUrl: 'https://drive.google.com/file/d/1AI-cWO9UHKEnwxcYDXohlSAPjSGMCKH4/preview',
   },
   {
     id: 2,
