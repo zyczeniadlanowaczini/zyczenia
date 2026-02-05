@@ -1,9 +1,6 @@
-import { useState } from 'react';
 import Envelope from './components/Envelope';
 import AccessGate from './components/AccessGate';
-import VideoModal from './components/VideoModal';
 import { VideoMessage } from './types';
-
 
 const videoMessages: VideoMessage[] = [
   {
@@ -39,29 +36,9 @@ const videoMessages: VideoMessage[] = [
 ];
 
 function App() {
-  const [selectedMessage, setSelectedMessage] = useState<VideoMessage | null>(null);
-
-  const handleNext = () => {
-    if (!selectedMessage) return;
-
-    const currentIndex = videoMessages.findIndex(m => m.id === selectedMessage.id);
-    const nextIndex = (currentIndex + 1) % videoMessages.length;
-    setSelectedMessage(videoMessages[nextIndex]);
+  const handleEnvelopeClick = (videoUrl: string) => {
+    window.open(videoUrl, '_blank', 'noopener,noreferrer,width=1024,height=768,left=100,top=100');
   };
-
-  const hasNext = selectedMessage
-    ? videoMessages.findIndex(m => m.id === selectedMessage.id) < videoMessages.length - 1
-    : false;
-
- const handleEnvelopeClick = (message: VideoMessage) => {
-  const features = 'noopener,noreferrer,width=1024,height=768,left=100,top=100';
-
-  if (message.videoUrl.includes('/preview')) {
-    window.open(message.videoUrl, '_blank', features);
-  } else {
-    window.open(message.videoUrl, '_blank', features);
-  }
-};
 
 
   return (
@@ -104,7 +81,7 @@ function App() {
               <Envelope
                 key={message.id}
                 from={message.from}
-                onClick={() => handleEnvelopeClick(message)}
+                onClick={() => handleEnvelopeClick(message.videoUrl)}
               />
             ))}
           </div>
@@ -124,15 +101,6 @@ function App() {
           <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-transparent via-[#2F5FA8] to-transparent opacity-50"></div>
         </section>
       </div>
-
-      {selectedMessage && (
-        <VideoModal
-          message={selectedMessage}
-          onClose={() => setSelectedMessage(null)}
-          onNext={handleNext}
-          hasNext={hasNext}
-        />
-      )}
     </div>
       </AccessGate>
   );
