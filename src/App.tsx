@@ -53,7 +53,7 @@ function App() {
             </svg>
           </div>
           <h1 className="text-7xl md:text-8xl font-bold text-[#2F5FA8] mb-2">
-            Wszystkiego
+            Wszystkiego najlepszego Wika!
           </h1>
           <h1 className="text-7xl md:text-8xl font-bold text-[#2F5FA8] mb-6">
             najlepszego!
