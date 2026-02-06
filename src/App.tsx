@@ -86,7 +86,7 @@ function App() {
         </section>
 
         <section className="text-center py-12 px-6 rounded-none animate-fadeIn relative">
-          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-transparent via-[#2F5FA8] to-transparent opacity-50"></div>
+          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-transparent via-[#704540] to-transparent opacity-50"></div>
           <p className="text-xl md:text-2xl text-[#704540] leading-relaxed mb-4 font-light">
             To wszystko było zrobione specjalnie dla Ciebie!
           </p>
