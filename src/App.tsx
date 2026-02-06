@@ -63,10 +63,10 @@ function App() {
   className="mx-auto mt-4 mb-6 w-40 md:w-48 opacity-95"
  />
 
-          <p className="text-xl md:text-2xl text-[#2F5FA8] mb-4 font-light tracking-wide">
+          <p className="text-xl md:text-2xl text-[#704540] mb-4 font-light tracking-wide">
             Tutaj czekają koperty z urodzinowymi życzeniami dla Ciebie
           </p>
-          <p className="text-lg md:text-xl text-[#2F5FA8] font-light">
+          <p className="text-lg md:text-xl text-[#704540] font-light">
             Klikaj na koperty, oglądaj filmiki i wracaj kiedy chcesz!
           </p>
 
@@ -87,13 +87,13 @@ function App() {
 
         <section className="text-center py-12 px-6 rounded-none animate-fadeIn relative">
           <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-transparent via-[#2F5FA8] to-transparent opacity-50"></div>
-          <p className="text-xl md:text-2xl text-[#2F5FA8] leading-relaxed mb-4 font-light">
+          <p className="text-xl md:text-2xl text-[#704540] leading-relaxed mb-4 font-light">
             To wszystko było zrobione specjalnie dla Ciebie!
           </p>
-          <p className="text-xl md:text-2xl text-[#2F5FA8] mb-3 font-light">
+          <p className="text-xl md:text-2xl text-[#704540] mb-3 font-light">
             Bo jesteś dla Nas bardzo ważna...
           </p>
-          <p className="text-5xl md:text-6xl font-bold text-[#2F5FA8]">
+          <p className="text-5xl md:text-6xl font-bold text-[#704540]">
             Kochamy Cię!
           </p>
           <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-transparent via-[#2F5FA8] to-transparent opacity-50"></div>
