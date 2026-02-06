@@ -52,7 +52,7 @@ function App() {
               <path d="M 20 30 Q 30 45, 40 30 Q 50 15, 60 30 Q 70 45, 80 30 Q 90 15, 100 30" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </div>
-          <h1 className="text-7xl md:text-8xl font-bold text-[#2F5FA8] mb-2">
+          <h1 className="text-7xl md:text-8xl font-bold text-[#A67470] mb-2">
             Wszystkiego najlepszego Wika!
           </h1>
      
