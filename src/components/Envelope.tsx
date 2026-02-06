@@ -61,8 +61,6 @@ export default function Envelope({ from, onClick }: EnvelopeProps) {
         </div>
       </div>
 
-      {/* subtle highlight for depth */}
-      <div className="absolute top-2 left-2 w-1/3 h-1/4 bg-gradient-to-br from-white/10 to-transparent rounded-none opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
     </button>
   );
 }
