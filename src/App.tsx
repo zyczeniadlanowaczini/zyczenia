@@ -55,9 +55,7 @@ function App() {
           <h1 className="text-7xl md:text-8xl font-bold text-[#2F5FA8] mb-2">
             Wszystkiego najlepszego Wika!
           </h1>
-          <h1 className="text-7xl md:text-8xl font-bold text-[#2F5FA8] mb-6">
-            najlepszego!
-          </h1>
+     
 
           <img
   src="/tort.png"
