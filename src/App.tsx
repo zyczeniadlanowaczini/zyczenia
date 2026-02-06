@@ -11,7 +11,7 @@ const videoMessages: VideoMessage[] = [
   {
     id: 2,
     from: 'Mikołaj',
-    videoUrl: 'https://drive.google.com/file/d/1AI-cWO9UHKEnwxcYDXohlSAPjSGMCKH4/preview',
+    videoUrl: 'https://drive.google.com/file/d/1aUjslBxMXKvxRnZTDIzGQ3c38GdYX5mi/preview',
   },
   {
     id: 3,
