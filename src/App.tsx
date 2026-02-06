@@ -47,7 +47,7 @@ function App() {
       <div className="max-w-7xl mx-auto px-4 py-12">
         <section className="text-center mb-16 animate-fadeIn">
           <div className="mb-8">
-            <svg className="w-24 h-16 mx-auto text-[#2F5FA8] opacity-70" viewBox="0 0 120 60" fill="none" stroke="currentColor" strokeWidth="1.5">
+            <svg className="w-24 h-16 mx-auto text-[##704540] opacity-70" viewBox="0 0 120 60" fill="none" stroke="currentColor" strokeWidth="1.5">
               <path d="M 20 30 Q 30 15, 40 30 Q 50 45, 60 30 Q 70 15, 80 30 Q 90 45, 100 30" strokeLinecap="round" strokeLinejoin="round"/>
               <path d="M 20 30 Q 30 45, 40 30 Q 50 15, 60 30 Q 70 45, 80 30 Q 90 15, 100 30" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
