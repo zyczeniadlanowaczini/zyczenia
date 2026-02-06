@@ -34,6 +34,15 @@
     }
   }
 
+  @keyframes gentleFloat {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-4px);
+    }
+  }
+
   .animate-fadeIn {
     animation: fadeIn 0.6s ease-out;
   }
@@ -44,6 +53,15 @@
 
   .animate-shimmer {
     animation: shimmer 3s ease-in-out infinite;
+  }
+
+  .animate-gentleFloat {
+    animation: gentleFloat 3s ease-in-out infinite;
+  }
+
+  .paper-texture {
+    background-image:
+      url("data:image/svg+xml,%3Csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' /%3E%3CfeColorMatrix type='saturate' values='0.3'/%3E%3C/filter%3E%3Crect width='100' height='100' fill='%23C4827D' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
   }
 }
 body {
