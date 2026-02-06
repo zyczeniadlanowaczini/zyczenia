@@ -96,7 +96,7 @@ function App() {
           <p className="text-5xl md:text-6xl font-bold text-[#704540]">
             Kochamy Cię!
           </p>
-          <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-transparent via-[#2F5FA8] to-transparent opacity-50"></div>
+          <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-transparent via-[#704540] to-transparent opacity-50"></div>
         </section>
       </div>
     </div>
