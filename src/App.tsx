@@ -73,6 +73,11 @@ const videoMessages: VideoMessage[] = [
     from: 'Chowan',
     videoUrl: 'https://drive.google.com/file/d/1qvoOblSCoFo_pnj6DdDmVquelivHOFzy/preview',
   },
+   {
+    id: 15,
+    from: 'Karina',
+    videoUrl: 'https://drive.google.com/file/d/1f1Ivjeljs0bskEzpQqCVf1PQtOa7xLrk/preview',
+  },
   
 ];
 
