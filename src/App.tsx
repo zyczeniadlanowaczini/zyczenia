@@ -102,10 +102,10 @@ function App() {
             Wszystkiego najlepszego Wika!
           </h1>
      
-       <img
-  src="/happy.png"
-  alt="Happy"
-  className="mx-auto mt-6 mb-8 w-56 md:w-72 opacity-95"
+          <img
+  src="/tort.png"
+  alt="Urodzinowy tort"
+  className="mx-auto mt-4 mb-6 w-40 md:w-48 opacity-95"
  />
    
 
@@ -144,10 +144,11 @@ function App() {
           </p>
           <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-transparent via-[#704540] to-transparent opacity-50"></div>
                  <img
-  src="/tort.png"
-  alt="Urodzinowy tort"
-  className="mx-auto mt-4 mb-6 w-40 md:w-48 opacity-95"
- />
+<img
+  src="/happy.png"
+  alt="Happy"
+  className="mx-auto mt-6 mb-8 w-56 md:w-72 opacity-95"
+ />    
    
         </section>
       </div>
