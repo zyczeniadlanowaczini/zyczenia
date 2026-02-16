@@ -28,7 +28,7 @@ export default function AccessGate({
     return (
       <div className="min-h-screen flex items-center justify-center bg-stone-50">
         <div className="bg-white p-8 rounded-lg shadow-xl w-full max-w-sm">
-          <h2 className="text-2xl mb-4 text-center">Podaj hasło dostępu</h2>
+          <h2 className="text-2xl mb-4 text-center font-light">Podaj hasło dostępu</h2>
 
           <input
             type="password"
