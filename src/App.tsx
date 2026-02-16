@@ -15,24 +15,65 @@ const videoMessages: VideoMessage[] = [
   },
   {
     id: 3,
-    from: 'Olimpia',
-    videoUrl: 'https://vimeo.com/1160998960?share=copy&fl=sv&fe=ci',
+    from: 'Cristina',
+    videoUrl: 'https://drive.google.com/file/d/1Ub5ardOp888xYtUbir7LApC2K2fn8V9l/preview',
   },
   {
     id: 4,
-    from: 'Patryk',
-    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    from: 'Julka Kulbaczewska',
+    videoUrl: 'https://drive.google.com/file/d/165RybQEhJk3o4qqvzbrB_SWd1goUPAOk/preview',
   },
   {
     id: 5,
     from: 'Ola & Maciek',
-    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    videoUrl: 'https://drive.google.com/file/d/1fwJ12JO87ARbjav7IBYdeDMy8iKXDCxP/preview',
   },
   {
     id: 6,
-    from: 'Kacper',
-    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    from: 'Ola Maksym',
+    videoUrl: 'https://drive.google.com/file/d/1piAN3Vf23FGx8CBkuQYs10jxLVfu0CEo/preview',
   },
+  {
+    id: 7,
+    from: 'Estera',
+    videoUrl: 'https://drive.google.com/file/d/18hnbVbh2iJziZaBCNobITGQjC2d-R9yU/preview',
+  },
+    {
+    id: 8,
+    from: 'Paweł',
+    videoUrl: 'https://drive.google.com/file/d/1BqOTERveUIkplaK4a6soJE819Q6CPzJf/preview',
+  },
+    {
+    id: 9,
+    from: 'Nadia',
+    videoUrl: 'https://drive.google.com/file/d/1VbDij0penL4KGuZPCEm8ZNIPeu_VBS5x/preview',
+  },
+    {
+    id: 10,
+    from: 'Aneta & Daniel',
+    videoUrl: 'https://drive.google.com/file/d/1OTkKINKruf8Fv6YzBh5hBHFIKW39Sbk1/preview',
+  },
+   {
+    id: 11,
+    from: 'Judyta & Julka',
+    videoUrl: 'https://drive.google.com/file/d/1fY150b10D-r5iX_osclrQ2Og0xrUMll3/preview',
+  },
+  {
+    id: 12,
+    from: 'Alex Beim',
+    videoUrl: 'https://drive.google.com/file/d/1KYoi_hXBENiug8lsOQ1LR3pr6m92NERk/preview',
+  },
+    {
+    id: 13,
+    from: 'Agata Łabuda',
+    videoUrl: 'https://drive.google.com/file/d/1klABcA_yy11F-pUmhb9Tsw3yzm00DiR3/preview',
+  },
+     {
+    id: 14,
+    from: 'Chowan',
+    videoUrl: 'https://drive.google.com/file/d/1qvoOblSCoFo_pnj6DdDmVquelivHOFzy/preview',
+  },
+  
 ];
 
 function App() {
