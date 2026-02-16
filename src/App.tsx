@@ -110,7 +110,7 @@ function App() {
           <img
   src="/tort.png"
   alt="Urodzinowy tort"
-  className="mx-auto mt-6 mb-8 w-56 md:w-72 opacity-95"
+  className="mx-auto mt-4 mb-6 w-40 md:w-48 opacity-95"
  />
 
           <p className="text-xl md:text-2xl text-[#704540] mb-4 font-light tracking-wide">
