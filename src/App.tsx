@@ -98,16 +98,14 @@ function App() {
               <path d="M 20 30 Q 30 45, 40 30 Q 50 15, 60 30 Q 70 45, 80 30 Q 90 15, 100 30" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </div>
-          <h1 className="text-7xl md:text-8xl font-bold text-[#704540] mb-2">
-            Wszystkiego najlepszego Wika!
-          </h1>
-     
-          <img
-  src="/tort.png"
-  alt="Urodzinowy tort"
-  className="mx-auto mt-4 mb-6 w-40 md:w-48 opacity-95"
- />
    
+     
+
+   <img
+  src="/happy.png"
+  alt="Happy"
+  className="mx-auto mt-6 mb-8 w-56 md:w-72 opacity-95"
+ />  
 
           <p className="text-xl md:text-2xl text-[#704540] mb-4 font-light tracking-wide">
             Tutaj czekają koperty z urodzinowymi życzeniami dla Ciebie
@@ -143,12 +141,12 @@ function App() {
             Kochamy Cię!
           </p>
           <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-transparent via-[#704540] to-transparent opacity-50"></div>
-                 <img
-<img
-  src="/happy.png"
-  alt="Happy"
-  className="mx-auto mt-6 mb-8 w-56 md:w-72 opacity-95"
- />    
+                      <img
+  src="/tort.png"
+  alt="Urodzinowy tort"
+  className="mx-auto mt-4 mb-6 w-40 md:w-48 opacity-95"
+ />  
+  
    
         </section>
       </div>
