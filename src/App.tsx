@@ -35,7 +35,7 @@ const videoMessages: VideoMessage[] = [
   },
   {
     id: 7,
-    from: 'Alex Mańska',
+    from: 'Alex Mańka',
     videoUrl: 'https://drive.google.com/file/d/1z1lpoXHF2rG-WuwsSJ5XsSamS79Octfy/preview',
   },
     {
