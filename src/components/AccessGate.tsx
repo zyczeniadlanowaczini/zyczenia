@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const ACCESS_CODE = '040399'; // ← TU ZMIEŃ KOD
+const ACCESS_CODE = '993040'; // ← TU ZMIEŃ KOD
 
 export default function AccessGate({
   children,
