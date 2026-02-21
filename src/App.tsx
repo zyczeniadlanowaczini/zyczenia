@@ -145,7 +145,9 @@ function App() {
      
 
  
-
+ <p className="text-xl md:text-2xl text-[#704540] mb-4 font-light tracking-wide">
+            Hej Wiki,
+          </p>
           <p className="text-xl md:text-2xl text-[#704540] mb-4 font-light tracking-wide">
             Tutaj czekają koperty z urodzinowymi życzeniami dla Ciebie
           </p>
