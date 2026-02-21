@@ -10,8 +10,8 @@ const videoMessages: VideoMessage[] = [
   },
   {
     id: 2,
-    from: 'Mikołaj',
-    videoUrl: 'https://drive.google.com/file/d/1aUjslBxMXKvxRnZTDIzGQ3c38GdYX5mi/preview',
+   from: 'Ida',
+    videoUrl: 'https://drive.google.com/file/d/1H0yCzNE4J0TFK1W622E9jnkE35mWbGZI/preview',
   },
   {
     id: 3,
@@ -20,13 +20,13 @@ const videoMessages: VideoMessage[] = [
   },
   {
     id: 4,
-    from: 'Julka Kulbaczewska',
-    videoUrl: 'https://drive.google.com/file/d/165RybQEhJk3o4qqvzbrB_SWd1goUPAOk/preview',
+    from: 'Mikołaj',
+    videoUrl: 'https://drive.google.com/file/d/1aUjslBxMXKvxRnZTDIzGQ3c38GdYX5mi/preview',
   },
   {
     id: 5,
-    from: 'Ola & Maciek',
-    videoUrl: 'https://drive.google.com/file/d/1fwJ12JO87ARbjav7IBYdeDMy8iKXDCxP/preview',
+    from: 'Patryk',
+    videoUrl: 'https://drive.google.com/file/d/1Bn2aLfo2JAEMtm-qS7VZPySUVfAgQG1-/preview',
   },
   {
     id: 6,
@@ -35,8 +35,8 @@ const videoMessages: VideoMessage[] = [
   },
   {
     id: 7,
-    from: 'Estera',
-    videoUrl: 'https://drive.google.com/file/d/18hnbVbh2iJziZaBCNobITGQjC2d-R9yU/preview',
+    from: 'Alex Mańska',
+    videoUrl: 'https://drive.google.com/file/d/1z1lpoXHF2rG-WuwsSJ5XsSamS79Octfy/preview',
   },
     {
     id: 8,
@@ -45,13 +45,13 @@ const videoMessages: VideoMessage[] = [
   },
     {
     id: 9,
-    from: 'Nadia',
-    videoUrl: 'https://drive.google.com/file/d/1VbDij0penL4KGuZPCEm8ZNIPeu_VBS5x/preview',
+    from: 'Olimpia & Janek',
+    videoUrl: 'https://drive.google.com/file/d/1fPk1GUZQe665aNGATcxXCuIf1sDITrht/preview',
   },
     {
     id: 10,
-    from: 'Aneta & Daniel',
-    videoUrl: 'https://drive.google.com/file/d/1OTkKINKruf8Fv6YzBh5hBHFIKW39Sbk1/preview',
+    from: 'Julka Kulbaczewska',
+    videoUrl: 'https://drive.google.com/file/d/165RybQEhJk3o4qqvzbrB_SWd1goUPAOk/preview',
   },
    {
     id: 11,
@@ -60,8 +60,8 @@ const videoMessages: VideoMessage[] = [
   },
   {
     id: 12,
-    from: 'Alex Beim',
-    videoUrl: 'https://drive.google.com/file/d/1KYoi_hXBENiug8lsOQ1LR3pr6m92NERk/preview',
+    from: 'Ola Dul',
+    videoUrl: 'https://drive.google.com/file/d/1v82EvXFOgp4PMcKA_2WZGleM-aCPrabd/preview',
   },
     {
     id: 13,
@@ -78,7 +78,41 @@ const videoMessages: VideoMessage[] = [
     from: 'Karina',
     videoUrl: 'https://drive.google.com/file/d/1f1Ivjeljs0bskEzpQqCVf1PQtOa7xLrk/preview',
   },
-  
+    {
+    id: 16,
+    from: 'Ola & Maciek',
+    videoUrl: 'https://drive.google.com/file/d/1fwJ12JO87ARbjav7IBYdeDMy8iKXDCxP/preview',
+  },
+   {
+    id: 17,
+    from: 'Estera',
+    videoUrl: 'https://drive.google.com/file/d/18hnbVbh2iJziZaBCNobITGQjC2d-R9yU/preview',
+  },
+     {
+    id: 18,
+    from: 'Aneta & Daniel',
+    videoUrl: 'https://drive.google.com/file/d/1OTkKINKruf8Fv6YzBh5hBHFIKW39Sbk1/preview',
+  },
+   {
+    id: 19,
+    from: 'Nadia',
+    videoUrl: 'https://drive.google.com/file/d/1VbDij0penL4KGuZPCEm8ZNIPeu_VBS5x/preview',
+  },
+    {
+    id: 20,
+    from: 'Sebastian',
+    videoUrl: 'https://drive.google.com/file/d/1TDEJJ91-nmpGd5MQkCBxIxkgMzl3NfeH/preview',
+  },
+   {
+    id: 21,
+    from: 'Rafał',
+    videoUrl: 'https://drive.google.com/file/d/1_DsryQ2silRjrtWBBgCErGy7la5ATQTI/preview',
+  },
+   {
+  id: 22,
+    from: 'Alex Beim',
+    videoUrl: 'https://drive.google.com/file/d/1KYoi_hXBENiug8lsOQ1LR3pr6m92NERk/preview',
+  },
 ];
 
 function App() {
