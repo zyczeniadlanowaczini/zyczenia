@@ -122,98 +122,13 @@ const videoMessages: VideoMessage[] = [
 ];
 
 function App() {
-  const [showZoom, setShowZoom] = useState(false);
-  const [isTransitioning, setIsTransitioning] = useState(false);
-
   const handleEnvelopeClick = (videoUrl: string) => {
     window.open(videoUrl, '_blank', 'noopener,noreferrer,width=1024,height=768,left=100,top=100');
   };
 
-  const handleTortClick = () => {
-    setShowZoom(true);
-    setTimeout(() => {
-      setIsTransitioning(true);
-    }, 1500);
-  };
-
-  if (showZoom && !isTransitioning) {
-    return (
-      <AccessGate>
-        <div className="fixed inset-0 bg-[#FBF7F2] flex items-center justify-center overflow-hidden">
-          <img
-            src="/tort.png"
-            alt="Urodzinowy tort"
-            className="animate-zoomIn w-96 md:w-screen opacity-95"
-          />
-        </div>
-      </AccessGate>
-    );
-  }
-
-  if (isTransitioning) {
-    return (
-      <AccessGate>
-        <div className="min-h-screen bg-gradient-to-br from-[#FBF7F2] via-[#FBF7F2] to-[#FBF7F2] opacity-0 animate-fadeInSlow">
-          <div className="max-w-7xl mx-auto px-4 py-12">
-            <section className="text-center mb-16 animate-fadeIn">
-              <div className="mb-8">
-                <svg className="w-24 h-16 mx-auto text-[##704540] opacity-70" viewBox="0 0 120 60" fill="none" stroke="currentColor" strokeWidth="1.5">
-                  <path d="M 20 30 Q 30 15, 40 30 Q 50 45, 60 30 Q 70 15, 80 30 Q 90 45, 100 30" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M 20 30 Q 30 45, 40 30 Q 50 15, 60 30 Q 70 45, 80 30 Q 90 15, 100 30" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </div>
-              <img
-                src="/tort.png"
-                alt="Urodzinowy tort"
-                className="mx-auto mt-4 mb-6 w-40 md:w-48 opacity-95"
-              />
-              <p className="text-xl md:text-2xl text-[#704540] mb-4 font-light tracking-wide">
-                Hej Wiki,
-              </p>
-              <p className="text-xl md:text-2xl text-[#704540] mb-4 font-light tracking-wide">
-                Tutaj czekają koperty z życzeniami urodzinowymi dla Ciebie
-              </p>
-              <p className="text-lg md:text-xl text-[#704540] font-light">
-                Klikaj na koperty, oglądaj filmiki i wracaj kiedy chcesz!
-              </p>
-            </section>
-
-            <section className="mb-16">
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 animate-slideUp">
-                {videoMessages.map((message) => (
-                  <Envelope
-                    key={message.id}
-                    from={message.from}
-                    onClick={() => handleEnvelopeClick(message.videoUrl)}
-                  />
-                ))}
-              </div>
-            </section>
-
-            <section className="text-center py-12 px-6 rounded-none animate-fadeIn relative">
-              <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-transparent via-[#704540] to-transparent opacity-50"></div>
-              <p className="text-xl md:text-2xl text-[#704540] leading-relaxed mb-4 font-light">
-                To wszystko zostało zrobione specjalnie dla Ciebie...
-              </p>
-              <p className="text-xl md:text-2xl text-[#704540] mb-3 font-light">
-                bo jesteś dla Nas bardzo ważna!
-              </p>
-              <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-transparent via-[#704540] to-transparent opacity-50"></div>
-              <img
-                src="/happy.png"
-                alt="Happy"
-                className="mx-auto mt-6 mb-8 w-56 md:w-72 opacity-95"
-              />
-            </section>
-          </div>
-        </div>
-      </AccessGate>
-    );
-  }
-
   return (
     <AccessGate>
-    <div className="min-h-screen bg-gradient-to-br from-[#FBF7F2] via-[#FBF7F2] to-[#FBF7F2]">
+    <div className="min-h-screen bg-gradient-to-br from-[#FBF7F2] via-[#FBF7F2] to-[#FBF7F2] animate-subtleEnter">
       <div className="max-w-7xl mx-auto px-4 py-12">
         <section className="text-center mb-16 animate-fadeIn">
           <div className="mb-8">
@@ -222,20 +137,13 @@ function App() {
               <path d="M 20 30 Q 30 45, 40 30 Q 50 15, 60 30 Q 70 45, 80 30 Q 90 15, 100 30" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </div>
-          <button
-            onClick={handleTortClick}
-            className="cursor-pointer hover:opacity-80 transition-opacity"
-          >
-            <img
-              src="/tort.png"
-              alt="Urodzinowy tort"
-              className="mx-auto mt-4 mb-6 w-40 md:w-48 opacity-95"
-            />
-          </button>  
-     
+          <img
+            src="/tort.png"
+            alt="Urodzinowy tort"
+            className="mx-auto mt-4 mb-6 w-40 md:w-48 opacity-95"
+          />
 
- 
- <p className="text-xl md:text-2xl text-[#704540] mb-4 font-light tracking-wide">
+          <p className="text-xl md:text-2xl text-[#704540] mb-4 font-light tracking-wide">
             Hej Wiki,
           </p>
           <p className="text-xl md:text-2xl text-[#704540] mb-4 font-light tracking-wide">
@@ -244,8 +152,6 @@ function App() {
           <p className="text-lg md:text-xl text-[#704540] font-light">
             Klikaj na koperty, oglądaj filmiki i wracaj kiedy chcesz!
           </p>
-
-
         </section>
 
         <section className="mb-16">
@@ -268,15 +174,13 @@ function App() {
           <p className="text-xl md:text-2xl text-[#704540] mb-3 font-light">
             bo jesteś dla Nas bardzo ważna!
           </p>
-    
+
           <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-transparent via-[#704540] to-transparent opacity-50"></div>
-  <img
-  src="/happy.png"
-  alt="Happy"
-  className="mx-auto mt-6 mb-8 w-56 md:w-72 opacity-95"
- />  
-  
-   
+          <img
+            src="/happy.png"
+            alt="Happy"
+            className="mx-auto mt-6 mb-8 w-56 md:w-72 opacity-95"
+          />
         </section>
       </div>
     </div>
