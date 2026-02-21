@@ -32,10 +32,12 @@ export default function Envelope({ from, onClick }: EnvelopeProps) {
           absolute top-0 left-0 w-full h-1/2
           bg-gradient-to-b from-[#9B6B65] via-[#8B5D57] to-[#7A4D47]
           transition-all duration-500 group-hover:opacity-90
+          flap-open
         "
         style={{
           clipPath: 'polygon(0 0, 100% 0, 50% 100%)',
           boxShadow: 'inset 0 1px 3px rgba(255, 255, 255, 0.2), inset 0 -1px 2px rgba(0, 0, 0, 0.1)',
+          transformOrigin: 'top center',
         }}
       />
 
