@@ -130,7 +130,7 @@ function App() {
     <AccessGate>
     <div className="min-h-screen bg-gradient-to-br from-[#FBF7F2] via-[#FBF7F2] to-[#FBF7F2] animate-subtleEnter">
       <div className="max-w-7xl mx-auto px-4 py-12">
-        <section className="text-center mb-16 animate-fadeIn">
+        <section className="text-center mb-16">
           <div className="mb-8">
             <svg className="w-24 h-16 mx-auto text-[##704540] opacity-70" viewBox="0 0 120 60" fill="none" stroke="currentColor" strokeWidth="1.5">
               <path d="M 20 30 Q 30 15, 40 30 Q 50 45, 60 30 Q 70 15, 80 30 Q 90 45, 100 30" strokeLinecap="round" strokeLinejoin="round"/>
@@ -155,7 +155,7 @@ function App() {
         </section>
 
         <section className="mb-16">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 animate-slideUp">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {videoMessages.map((message) => (
               <Envelope
                 key={message.id}
@@ -166,7 +166,7 @@ function App() {
           </div>
         </section>
 
-        <section className="text-center py-12 px-6 rounded-none animate-fadeIn relative">
+        <section className="text-center py-12 px-6 rounded-none relative">
           <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-transparent via-[#704540] to-transparent opacity-50"></div>
           <p className="text-xl md:text-2xl text-[#704540] leading-relaxed mb-4 font-light">
             To wszystko zostało zrobione specjalnie dla Ciebie...
