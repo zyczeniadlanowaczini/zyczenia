@@ -150,7 +150,7 @@ function App() {
             Tutaj czekają na Ciebie koperty z życzeniami urodzinowymi
           </p>
           <p className="text-lg md:text-xl text-[#704540] font-light">
-            Klikaj, oglądaj filmiki i wracaj kiedy chcesz!
+            Klikaj, oglądaj i wracaj kiedy chcesz!
           </p>
         </section>
 
