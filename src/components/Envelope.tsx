@@ -44,7 +44,7 @@ export default function Envelope({ from, onClick }: EnvelopeProps) {
       {/* envelope body */}
       <div className="absolute inset-0 flex flex-col items-center justify-center p-6">
         {/* heart icon */}
-        <div className="mb-5 transform transition-transform duration-500 group-hover:scale-110">
+        <div className="mb-5 transform transition-transform duration-500 group-hover:scale-110 group-hover:-translate-y-8">
           <Heart className="w-8 h-8 text-[#F5E6D3]/60 fill-[#F5E6D3]/60" />
         </div>
 
