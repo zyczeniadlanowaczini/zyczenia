@@ -147,10 +147,10 @@ function App() {
             Hej Wiki,
           </p>
           <p className="text-xl md:text-2xl text-[#704540] mb-4 font-light tracking-wide">
-            Tutaj czekają koperty z życzeniami urodzinowymi dla Ciebie
+            Tutaj czekają na Ciebie koperty z życzeniami urodzinowymi
           </p>
           <p className="text-lg md:text-xl text-[#704540] font-light">
-            Klikaj na koperty, oglądaj filmiki i wracaj kiedy chcesz!
+            Klikaj, oglądaj filmiki i wracaj kiedy chcesz!
           </p>
         </section>
 
