@@ -119,6 +119,16 @@ const videoMessages: VideoMessage[] = [
     from: 'Agata Łabuda',
     videoUrl: 'https://drive.google.com/file/d/1klABcA_yy11F-pUmhb9Tsw3yzm00DiR3/preview',
   },
+    {
+    id: 24,
+    from: 'Stefi & Carmen',
+    videoUrl: 'https://drive.google.com/file/d/19BWXaJzpCjvI9wqshlyM2TlMFlLp-TV4/preview',
+  },
+  {
+    id: 25,
+    from: 'Adrian',
+    videoUrl: 'https://drive.google.com/file/d/1BFn1i3ZU-iRGe6n_AklsTSzKANsfY_3h/preview',
+  },
 ];
 
 function App() {
