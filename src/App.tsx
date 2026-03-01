@@ -21,8 +21,8 @@ const videoMessages: VideoMessage[] = [
   },
   {
     id: 4,
-    from: 'Mikołaj',
-    videoUrl: 'https://drive.google.com/file/d/1aUjslBxMXKvxRnZTDIzGQ3c38GdYX5mi/preview',
+    from: 'Paulina',
+    videoUrl: 'https://drive.google.com/file/d/1879x3T9G7THjurWyQA6AZ2vzrZueE4kZ/preview',
   },
   {
     id: 5,
@@ -56,8 +56,8 @@ const videoMessages: VideoMessage[] = [
   },
    {
     id: 11,
-    from: 'Judyta & Julka',
-    videoUrl: 'https://drive.google.com/file/d/1fY150b10D-r5iX_osclrQ2Og0xrUMll3/preview',
+     from: 'Mikołaj',
+    videoUrl: 'https://drive.google.com/file/d/1aUjslBxMXKvxRnZTDIzGQ3c38GdYX5mi/preview',
   },
   {
     id: 12,
@@ -111,8 +111,8 @@ const videoMessages: VideoMessage[] = [
   },
    {
   id: 22,
-    from: 'Alex Beim',
-    videoUrl: 'https://drive.google.com/file/d/1KYoi_hXBENiug8lsOQ1LR3pr6m92NERk/preview',
+    from: 'Judyta & Julka',
+    videoUrl: 'https://drive.google.com/file/d/1fY150b10D-r5iX_osclrQ2Og0xrUMll3/preview',
   },
   {
     id: 23,
@@ -128,6 +128,16 @@ const videoMessages: VideoMessage[] = [
     id: 25,
     from: 'Adrian',
     videoUrl: 'https://drive.google.com/file/d/1BFn1i3ZU-iRGe6n_AklsTSzKANsfY_3h/preview',
+  },
+     {
+  id: 26,
+    from: 'Alex Beim',
+    videoUrl: 'https://drive.google.com/file/d/1KYoi_hXBENiug8lsOQ1LR3pr6m92NERk/preview',
+  },
+    {
+  id: 27,
+    from: 'Bonus z 2015',
+    videoUrl: 'https://drive.google.com/file/d/10vibUc81sFXJFgQ7hRP-hQmiBvv9e0oX/preview',
   },
 ];
 
