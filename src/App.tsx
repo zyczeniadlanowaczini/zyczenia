@@ -181,12 +181,22 @@ function App() {
 
         <section className="mb-16">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {videoMessages.map((message) => (
+            {videoMessages.slice(0, -1).map((message) => (
               <Envelope
                 key={message.id}
                 from={message.from}
                 onClick={() => handleEnvelopeClick(message.videoUrl)}
               />
+            ))}
+          </div>
+          <div className="flex justify-center mt-8">
+            {videoMessages.slice(-1).map((message) => (
+              <div key={message.id} className="w-full sm:w-1/2 lg:w-1/3">
+                <Envelope
+                  from={message.from}
+                  onClick={() => handleEnvelopeClick(message.videoUrl)}
+                />
+              </div>
             ))}
           </div>
         </section>
