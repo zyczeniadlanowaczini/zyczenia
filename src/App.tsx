@@ -51,8 +51,8 @@ const videoMessages: VideoMessage[] = [
   },
     {
     id: 10,
-    from: 'Julka Kulbaczewska',
-    videoUrl: 'https://drive.google.com/file/d/165RybQEhJk3o4qqvzbrB_SWd1goUPAOk/preview',
+    from: 'Agata',
+    videoUrl: 'https://drive.google.com/file/d/1xf5YeWEcGkVlMoNWeDPVl5B4mGU3D5Ff/preview',
   },
    {
     id: 11,
@@ -75,9 +75,9 @@ const videoMessages: VideoMessage[] = [
     videoUrl: 'https://drive.google.com/file/d/1qvoOblSCoFo_pnj6DdDmVquelivHOFzy/preview',
   },
    {
-    id: 15,
-    from: 'Karina',
-    videoUrl: 'https://drive.google.com/file/d/1f1Ivjeljs0bskEzpQqCVf1PQtOa7xLrk/preview',
+   id: 15,
+    from: 'Julka Kulbaczewska',
+    videoUrl: 'https://drive.google.com/file/d/165RybQEhJk3o4qqvzbrB_SWd1goUPAOk/preview',
   },
     {
     id: 16,
@@ -134,8 +134,13 @@ const videoMessages: VideoMessage[] = [
     from: 'Alex Beim',
     videoUrl: 'https://drive.google.com/file/d/1KYoi_hXBENiug8lsOQ1LR3pr6m92NERk/preview',
   },
+     {
+    id: 27,
+    from: 'Karina',
+    videoUrl: 'https://drive.google.com/file/d/1f1Ivjeljs0bskEzpQqCVf1PQtOa7xLrk/preview',
+  },
     {
-  id: 27,
+    id: 28,
     from: 'Bonus z 2015',
     videoUrl: 'https://drive.google.com/file/d/10vibUc81sFXJFgQ7hRP-hQmiBvv9e0oX/preview',
   },
